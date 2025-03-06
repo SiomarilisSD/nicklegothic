@@ -1,14 +1,22 @@
 @font-face {
     src: url("fonts/NickelGothicVariable[slnt\,wdth]-Edu.woff2") format("woff2"),
          url('fonts/NickelGothicVariable[slnt\,wdth]-Edu.woff') format("woff");
-        font-family: 'NickelGothicVariable';
+        font-family: 'Nickel Gothic Variable';
         font-style: normal;
         font-weight: normal;
         }
     
+        @font-face {
+            src: url("fonts/NickelGothicVariable[slnt\,wdth]-Edu.woff2") format("woff2"),
+                 url('fonts/NickelGothicVariable[slnt\,wdth]-Edu.woff') format("woff");
+                font-family: 'Nickel Gothic Variable';
+                font-style: normal;
+                font-weight: normal;
+                }
+            
     body{
     background-color: lightsteelblue;
-    font-family: 'NickelGothicVariable';
+    font-family: 'Nickel Gothic Variable';
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
