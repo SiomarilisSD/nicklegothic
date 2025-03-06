@@ -36,15 +36,15 @@ grid-template-areas:
     "a a";
 }
 
-.history {
+#history {
 grid-area: h;
 }
 
-.variations{
+#variations{
 grid-area: v;
 }
 
-.alphabet {
+#alphabet {
 grid-area: a;
 }
 }
@@ -70,8 +70,8 @@ h3{
     }
     50%{font-variation-settings: "wght" 150, "slnt" 15;
     }
-    
-}
+}b  
+
 /* variable font that changes on hover */
 .variable-font{
     font-weight:1 ;
