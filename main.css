@@ -54,8 +54,9 @@ footer{
 }
 
 /* variable font animation */
+/* variable font animation */
 h1{
-    font-variation-settings: "wght" 25;
+    font-variation-settings: "wght" 200;
 }
 h3{
     font-weight:20; 
@@ -64,14 +65,59 @@ h3{
     animation: weightChange 7s infinite;
 }
 
+/* Define the weightChange animation */
 @keyframes weightChange {
-    0%, 100%{
-        font-variation-settings: "wght" 25, "slnt" -15;
+    0%, 100% {
+        font-variation-settings: "wght" 200;
     }
-    50%{font-variation-settings: "wght" 150, "slnt" 15;
+    50% {
+        font-variation-settings: "wght" 700;
     }
-}b  
+} 
 
+/* animations for the varitions sections*/
+.width { 
+    animation: widthVariations 5s infinite;
+}
+
+@keyframes widthVariations {
+    0%, 100% {
+        font-variation-settings: "wdth" 25, "slnt" -15;
+    }
+    50% {
+        font-variation-settings: "wdth" 100, "slnt" 15;
+    }
+}
+
+/* Animation for the slant change */
+.slant { 
+    animation: slantVariations 5s infinite;
+}
+
+@keyframes slantVariations {
+    0%, 100% {
+        font-variation-settings: "wdth" 25, "slnt" -15;
+    }
+    50% {
+        font-variation-settings: "wdth" 100, "slnt" 15;
+    }
+}/* Styling and animation for h5 elements */
+h5 {
+    font-weight: 400; /* Corrected font-weight */
+    color: blue;
+    margin: 15px;
+    animation: weightChange 7s infinite;
+}
+
+/* Define the weightChange animation */
+@keyframes weightChange {
+    0%, 100% {
+        font-variation-settings: "wght" 200;
+    }
+    50% {
+        font-variation-settings: "wght" 700;
+    }
+}
 /* variable font that changes on hover */
 .variable-font{
     font-weight:1 ;
