@@ -78,17 +78,18 @@ h3{
     }
 }b  
  
-/* animations for the varitions sections*/
+/* animations for the variations sections */
 .width {
     animation: widthOnly 5s infinite; /* Apply the width-only animation */
+    font-variation-settings: "wdth" 50; /* Ensure initial width is set */
 }
 
 @keyframes widthOnly {
     0%, 100% {
-        font-variation-settings: "wdth" 25; /* Narrow width */
+        font-variation-settings: "wdth" 50; /* Narrow width */
     }
     50% {
-        font-variation-settings: "wdth" 100; /* Wide width */
+        font-variation-settings: "wdth" 200; /* Wide width */
     }
 }
 

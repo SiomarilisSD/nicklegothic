@@ -182,7 +182,15 @@
   main {
       flex: 1; /* Allow the main content to grow and take up available space */
   }
-  
+  body {
+            background-image: url('./images/city.svg'); /* Path to the image */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            margin: 0; /* Removes default margin for the body */
+            height: 100vh; /* Ensures the body takes up the full viewport height */
+        }
+
   /* Footer styling */
   footer {
       background-color: #b4b4b4; /* Optional: Add a background color */
@@ -208,36 +216,38 @@
         </nav>
     </header>
     <main>
+        
+        <section class="alphabet" style="overflow-y: auto; max-height: calc(100vh - 150px); padding: 1em;"></section>
         <h2>Full Character Set</h2>
         <p>
             This page displays the complete character set of the Nickel Gothic font, showcasing its versatility and supported glyphs.
         </p>
-        <section class="alphabet">
-                     <h2>Full Character Set Variants</h2>
+        <h2>Full Character Set Variants</h2>
             
             <!-- Default Style -->
             <section class="variant">
-                <h3>Default Style</h3>
-                <p class="default">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <h3>Default Style</h3>
+            <p class="default">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
             </section>
             
             <!-- Bold Variant -->
             <section class="variant">
-                <h3>Bold Style</h3>
-                <p class="bold">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <h3>Bold Style</h3>
+            <p class="bold">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
             </section>
             
             <!-- Condensed Variant -->
             <section class="variant">
-                <h3>Condensed Style</h3>
-                <p class="condensed">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <h3>Condensed Style</h3>
+            <p class="condensed">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
             </section>
             
             <!-- Slanted Variant -->
             <section class="variant">
-                <h3>Slanted Style</h3>
-                <p class="slanted">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <h3>Slanted Style</h3>
+            <p class="slanted">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
             </section>
+        </section>
 
     </main>
 </div>
