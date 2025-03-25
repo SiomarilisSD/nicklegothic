@@ -188,3 +188,76 @@ body {
         float: left; /* Align to the left-hand side */
     }
 }
+/* Position the #variations section in the left-center of the screen */
+#variations {
+    position: absolute; /* Position the section relative to the viewport */
+    top: 50%; /* Center vertically */
+    left: 2%; /* Align to the left side (adjust as needed) */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    max-width: 400px; /* Limit the width of the content */
+    text-align: left; /* Align text to the left */
+}
+
+/* General styling for the variants */
+.variant {
+    margin-bottom: 2em; /* Add spacing between sections */
+}
+
+.variant h3 {
+    font-family: 'Nickel Gothic Variable', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.variant p {
+    font-family: 'Nickel Gothic Variable', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Default Style */
+.default {
+    font-variation-settings: "wght" 400, "wdth" 100, "slnt" 0; /* Regular weight, normal width, no slant */
+}
+
+/* Bold Variant */
+.bold {
+    font-variation-settings: "wght" 700, "wdth" 100, "slnt" 0; /* Bold weight, normal width, no slant */
+}
+
+/* Condensed Variant */
+.condensed {
+    font-variation-settings: "wght" 400, "wdth" 50, "slnt" 0; /* Regular weight, condensed width, no slant */
+}
+
+/* Slanted Variant */
+.slanted {
+    font-variation-settings: "wght" 400, "wdth" 100, "slnt" -10; /* Regular weight, normal width, slanted */
+}
+/* Center the content vertically and align it to the left */
+body {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+.variant {
+    margin-left: 2em; /* Add spacing from the left edge */
+    max-width: 400px; /* Limit the width of the content */
+    text-align: left; /* Align text to the left */
+}
+
+.variant h3 {
+    font-family: 'Nickel Gothic Variable', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.variant p {
+    font-family: 'Nickel Gothic Variable', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+

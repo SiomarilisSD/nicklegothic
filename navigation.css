@@ -161,4 +161,29 @@
     }
   }
   
+    /* Ensure the body takes up the full height of the viewport */
+  body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensure the body is at least the height of the viewport */
+      margin: 0; /* Remove default margin */
+  }
+  
+  /* Main content area */
+  main {
+      flex: 1; /* Allow the main content to grow and take up available space */
+  }
+  
+  /* Footer styling */
+  footer {
+      background-color: #b4b4b4; /* Optional: Add a background color */
+      text-align: left; /* Align the footer content to the left */
+      padding: 1em; /* Add padding inside the footer */
+      position: fixed; /* Fix the footer to the bottom of the viewport */
+      bottom: 0; /* Align it to the bottom */
+      left: 0; /* Ensure it starts from the left edge */
+      width: 100%; /* Ensure it spans the full width */
+      box-sizing: border-box; /* Include padding and border in width */
+  }
+
   
