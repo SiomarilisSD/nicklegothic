@@ -231,6 +231,21 @@
         <h5>Variable font axes</h5>
         <h5 class="wdth">Width</h5>
         <style>
+             /* Center the content vertically and align it to the left */
+    #variations {
+        display: flex; /* Enable flexbox */
+        flex-direction: column; /* Stack content vertically */
+        justify-content: center; /* Vertically center the content */
+        align-items: flex-start; /* Align content to the left */
+        height: 100vh; /* Make the section take up the full viewport height */
+        padding-left: 2em; /* Add spacing from the left edge */
+        box-sizing: border-box; /* Include padding in width calculations */
+    }
+
+    #variations h2, #variations p, #variations h5 {
+        text-align: left; /* Ensure text is aligned to the left */
+        margin: 0.5em 0; /* Add spacing between elements */
+    }
           @keyframes animateWidth {
             0% { transform: scaleX(1); }
             50% { transform: scaleX(1.5); }

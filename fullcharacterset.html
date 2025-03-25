@@ -251,22 +251,42 @@
             <!-- Example element with .width class -->
 
 <style>
-    /* General styling for the variants */
+    /* Ensure the content fits within the open area and is left-hand centered */
+    .alphabet {
+        overflow-y: auto; /* Enable vertical scrolling if needed */
+        max-height: calc(100vh - 150px); /* Limit height to fit within the viewport */
+        padding: 1em; /* Add padding for spacing */
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Stack content vertically */
+        justify-content: center; /* Vertically center the content */
+        align-items: flex-start; /* Align content to the left */
+        margin-left: 2em; /* Add spacing from the left edge */
+        box-sizing: border-box; /* Include padding in width calculations */
+    }
+
+        h2 {
+            font-size: 1rem; /* Reduce heading size */
+            margin-bottom: 0.5em; /* Add spacing below the heading */
+            margin-top: 5em; /* Increase spacing above the heading to move it further down */
+            text-align: left; /* Ensure text is aligned to the left */
+        }
+
     .variant {
-        margin-bottom: 2em; /* Add spacing between sections */
+        margin-bottom: 1em; /* Reduce spacing between sections */
+        text-align: left; /* Ensure text is aligned to the left */
     }
 
     .variant h3 {
-        font-family: 'Nickel Gothic Variable', sans-serif;
-        font-size: 1.2em; /* Reduce heading size slightly */
-        margin-bottom: 0.5em;
+        font-size: 0.9rem; /* Reduce heading size slightly */
+        margin-bottom: 0.3em; /* Add smaller spacing below the heading */
+        text-align: left; /* Ensure text is aligned to the left */
     }
 
     .variant p {
-        font-family: 'Nickel Gothic Variable', sans-serif;
-        font-size: 0.8em; /* Reduce font size to fit on the screen */
+        font-size: 0.7rem; /* Reduce font size to fit on the screen */
         line-height: 1.2; /* Adjust line height for readability */
         word-break: break-word; /* Ensure long words break to fit the screen */
+        text-align: left; /* Ensure text is aligned to the left */
     }
 </style>
         </section>
