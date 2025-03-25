@@ -108,7 +108,7 @@ h3{
 }/* Styling and animation for h5 elements */
 h5 {
     font-weight: 400; /* Corrected font-weight */
-    color: blue;
+    color: rgb(246, 31, 31);
     margin: 15px;
     animation: weightChange 7s infinite;
 }

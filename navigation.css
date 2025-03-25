@@ -176,7 +176,7 @@
   
   /* Footer styling */
   footer {
-      background-color: #b4b4b4; /* Optional: Add a background color */
+      background-color: rgb(95, 92, 92); /* Optional: Add a background color */
       text-align: left; /* Align the footer content to the left */
       padding: 1em; /* Add padding inside the footer */
       position: fixed; /* Fix the footer to the bottom of the viewport */
@@ -185,5 +185,3 @@
       width: 100%; /* Ensure it spans the full width */
       box-sizing: border-box; /* Include padding and border in width */
   }
-
-  
