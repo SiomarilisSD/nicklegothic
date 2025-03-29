@@ -15,7 +15,7 @@
                 }
             
                 body {
-                    background-color: rgb(147, 147, 147);
+                    background-color: rgb(0, 0, 0);
                     font-family: 'Nickel Gothic Variable';
                     color: rgb(226, 226, 226); /* Change font color to white */
                 }
@@ -162,10 +162,7 @@ body {
 #alphabet {
     grid-area: a; /* Assign the full character set section to the "a" grid area */
 }
-/* CSS for the footer */
-footer{
-    background-color: gray;
-}
+
 
 /* variable font animation */
 /* variable font animation */
@@ -310,6 +307,93 @@ body {
     line-height: 1.5;
 }
 
+
+
+
+.parent-container {
+display: grid; /* Use grid layout */
+grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Create responsive columns */
+gap: 1rem; /* Add spacing between grid items */
+justify-content: flex-start; /* Align items to the left */
+align-items: flex-start; /* Align items to the top */
+}
+.variant {
+animation: gradientBackground 3s infinite; /* Apply animation automatically */
+color: #fff;
+background-size: 300% 100%; /* Ensure the gradient spans a larger area for smooth animation */
+background-image: linear-gradient(to right, #333333, #555555, #777777, #999999, #bbbbbb); /* Define gradient colors */
+}
+
+@keyframes gradientBackground {
+0% {
+    background-position: 0% 50%; /* Start at the left */
+}
+50% {
+    background-position: 100% 50%; /* Move to the right */
+}
+100% {
+    background-position: 0% 50%; /* Return to the left */
+}
+}
+
+.variant2 {
+animation: solidColorChange 3s infinite; /* Apply animation automatically */
+color: #fff;
+background-color: #5a3e3e; /* Initial reddish grey color */
+transition: background-color 0.3s ease-in-out; /* Smooth transition for color change */
+}
+
+@keyframes solidColorChange {
+0% {
+    background-color: #AD2831; /* Dark reddish grey */
+}
+33% {
+    background-color: #800E13; /* Medium reddish grey */
+}
+66% {
+    background-color: #640D14; /* Light reddish grey */
+}
+100% {
+    background-color: #38040E; /* Back to dark reddish grey */
+}
+}
+
+/* Add individual delays for each box */
+.variant2:nth-child(1) {
+animation-delay: 0s;
+}
+
+.variant2:nth-child(2) {
+animation-delay: 0.5s;
+}
+
+.variant2:nth-child(3) {
+animation-delay: 1s;
+}
+
+.variant2:nth-child(4) {
+animation-delay: 1.5s;
+}
+
+.variant2:nth-child(5) {
+animation-delay: 2s;
+}
+
+#aboutus {
+    padding: 2rem;
+    min-height: 500px; /* Use min-height instead of fixed height for flexibility */
+    background: black; /* Background color for clarity */
+    margin: 0; /* Remove any margin to prevent spillage */
+    height: auto;
+    position: relative; /* Ensure proper stacking */
+    width: 100vw; /* Ensure the section spans the full viewport width */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+/* CSS for the footer */
+footer{
+    background-color: gray;
+}
 .footer-button:hover{
     background-color: rgb(103, 64, 64);
 }
