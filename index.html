@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nickel Gothic Variable Font</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="navigation.css">
-    <title>NickelGothicVariableFont</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background Image</title>
     <style>
         body {
             background-image: url('./images/lamppost.svg'); /* Path to the image */
@@ -22,171 +19,85 @@
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1 class="logo">NickelGothic</h1>
+        <h1 class="logo">Nickel Gothic</h1>
         <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
         <nav class="page-nav">
             <ul>
-                
                 <li><a href="#history">History</a></li>
                 <li><a href="#variations">Variations</a></li>
-                <li><a href="#fullcharacterset">Character set</a></li>
-           
-           
+                <li><a href="#fullcharacterset">Character Set</a></li>
             </ul>
         </nav>
-        <label for="nav-checkbox" class="nav-checkbox-icon"></label>
-        <span></span>
-    </label>
+        <label for="nav-checkbox" class="nav-checkbox-icon">
+            <span></span>
+        </label>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <h3 class="slant">Nickel Gothic</h3>
+        <h3 class="slant">Variable</h3>
+    </section>
 
-        <!-- Hero section -->
-        <section class="hero">
-            <h3 class="slant">Nickel Gothic</h3>
-            <h3 class="slant">Variable</h3>
-      </section>
+    <!-- History Section -->
+    <section id="history">
+        <h2>History of the Font</h2>
+        <p>
+            Based on lettering found on the 1918 same Chinese banknote its serifed counterpart Nickel. It is also based on lettering from midcentury sans serif like Microgramma and Eurostile, and 70s gothic squared font, Neographik and Serpentine. It's a display sans serif. Containing Blocky shapes, it communicates with raw power.
+        </p>
+        <h2>Supported Languages include:</h2>
+        <p>
+            Latin, Western & Eastern European, Latin, Vietnamese, Cyrillic, Greek, and Monotonic.
+        </p>
+    </section>
 
-       <section class="page-wrapper" div id="history"
-        <h1> This is the history section</h1>
-    </div>
-    <div id="variations"
-        <h2> This is the variations section</h2>
-    </div>
-    <div id="fullcharacterset"
-        <h3> This is the full character set section</h3>
-    </div>
-        <label for="nav-checkbox" class="nav-checkbox-icon"></label>
-           <span></span>
-       </label>
-          </header>
-
-
-
-
-
-<!-- History Section -->
-<section class="page-wrapper" id="history">
-    <h2>History of the font</h2>
-    <p>
-        Based on lettering found on the 1918 same Chinese banknote its serifed counterpart Nickel. It is also based on lettering from midcentury sans serif like Microgramma and Eurostile, and 70s gothic squared font, Neographik and Serpentine. It's a display sans serif. Containing Blocky shapes, it communicates with raw power.
-    </p>
-    <h2>Supported Languages include:</h2>
-    <p>
-        Latin, Western & Eastern European, Latin, Vietnamese, Cyrillic, Greek, and Monotonic.
-    </p>
-</section>
-
-<!-- Font Variations Section -->
-<section class="page-wrapper" id="variations">
-    <h2>Full Character Set</h2>
-    <p>
-        This page displays the complete character set of 
-        the Nickel Gothic font, showcasing its versatility and supported glyphs.
-    </p>
-    <h2>Full Character Set Variants</h2>
-    
-    <!-- Default Style -->
-    <section class="variant"></section>
-        <h3>Default Style</h3>
-        <p class="default">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+    <!-- Variations Section -->
+    <section id="variations" style="position: relative; margin-top: 2rem; padding: 1rem;"></section>
+        <h2>Font Variations</h2>
+        <p>Nickel Gothic contains 2 variant fonts and offers different styles.</p>
+        <h5>Variable font axes:</h5>
+        <h5 class="wdth">Width</h5>
+        <h5 class="slant">Slant</h5>
     </section>
     
-    <!-- Bold Variant -->
-    <section class="variant"></section>
-        <h3>Bold Style</h3>
-        <p class="bold">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+    <!-- Full Character Set Section -->
+    <section id="fullcharacterset" style="padding: 1rem; text-align: center;">
+        <h2>Full Character Set</h2>
+        <p>
+            This page displays the complete character set of the Nickel Gothic font, showcasing its versatility and supported glyphs.
+        </p>
+        <h2>Full Character Set Variants</h2>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: nowrap;">
+            <!-- Default Style -->
+            <div class="variant" style="flex: 1 1 300px; max-width: 300px; border: 1px solid #ccc; padding: 1rem; border-radius: 8px;">
+                <h3>Default Style</h3>
+                <p class="default" style="word-wrap: break-word;">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            </div>
+
+            <!-- Bold Variant -->
+            <div class="variant" style="flex: 1 1 300px; max-width: 300px; border: 1px solid #ccc; padding: 1rem; border-radius: 8px;">
+                <h3>Bold Style</h3>
+                <p class="bold" style="word-wrap: break-word;">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            </div>
+
+            <!-- Condensed Variant -->
+            <div class="variant" style="flex: 1 1 300px; max-width: 300px; border: 1px solid #ccc; padding: 1rem; border-radius: 8px;">
+                <h3>Condensed Style</h3>
+                <p class="condensed" style="word-wrap: break-word;">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            </div>
+
+            <!-- Slanted Variant -->
+            <div class="variant" style="flex: 1 1 300px; max-width: 300px; border: 1px solid #ccc; padding: 1rem; border-radius: 8px;">
+                <h3>Slanted Style</h3>
+                <p class="slanted" style="word-wrap: break-word;">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            </div>
+        </div>
     </section>
-    
-    <!-- Condensed Variant -->
-    <section class="variant">
-        <h3>Condensed Style</h3>
-        <p class="condensed">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
-    </section>
-    
-    <!-- Slanted Variant -->
-    <section class="variant">
-        <h3>Slanted Style</h3>
-        <p class="slanted">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
-    </section>
-</section>
 
-<!-- Font Variations -->
-<section class="page-wrapper" id="variations">
-    <h2>Font variations</h2>
-    <p>Nickel Gothic contains 2 variant fonts and offers different styles.</p>
-    <h5>Variable font axes</h5>
-    <h5 class="wdth">Width</h5>
-    <h5 class="slant">Slant</h5>
-</section>
-
-<style>
-    .alphabet {
-        overflow-y: auto;
-        max-height: calc(100vh - 150px);
-        padding: 1em;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-left: 2em;
-        box-sizing: border-box;
-    }
-
-    h2 {
-        font-size: 1rem;
-        margin-bottom: 0.5em;
-        margin-top: 2em;
-        text-align: left;
-    }
-
-    .variant {
-        margin-bottom: 1em;
-        text-align: left;
-    }
-
-    .variant h3 {
-        font-size: 0.9rem;
-        margin-bottom: 0.3em;
-        text-align: left;
-    }
-
-    .variant p {
-        font-size: 0.7rem;
-        line-height: 1.2;
-        word-break: break-word;
-        text-align: left;
-    }
-
-    #variations h2, #variations p, #variations h5 {
-        text-align: left;
-        margin: 0.5em 0;
-    }
-
-    @keyframes animateWidth {
-        0% { transform: scaleX(1); }
-        50% { transform: scaleX(1.5); }
-        100% { transform: scaleX(1); }
-    }
-
-    .wdth {
-        display: inline-block;
-        animation: animateWidth 2s infinite;
-        font-size: calc(1em + 5pt);
-    }
-
-    .slant {
-        font-size: calc(1em + 5pt);
-    }
-</style>
-
-</section>
-          </div>
-          </section>
-          <!-- Start of the footer -->
-          <footer>
-            <a href="https://djr.com/nickel-gothic" target="_blank" class="footer-button">download</a> 
-            
-          </footer>
-
+    <!-- Footer -->
+    <footer>
+Siomarilis Santos Davila
 </body>
 </html>

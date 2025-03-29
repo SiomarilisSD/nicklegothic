@@ -40,17 +40,83 @@ grid-template-areas:
     "h v"
     "a a";
 }
+/* General Section Styling */
+section {
+    display: block; /* Ensure sections behave as block-level elements */
+    width: 100%; /* Make sections span the full width */
+    padding: 2em; /* Add padding inside each section for spacing */
+    box-sizing: border-box; /* Include padding in width calculations */
+    margin: 0; /* Reset any default margins */
+}
 
+/* Hero Section */
+.hero {
+    min-height: 100vh; /* Make the hero section take up the full viewport height */
+     background-image: url('./images/lamppost.svg'); /* Path to the lamppost.svg image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    display: flex; /* Center content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+}
+
+/* History Section */
 #history {
-grid-area: h;
+    min-height: 700px; /* Use min-height instead of fixed height for flexibility */
+    background: rgb(0, 0, 0); /* Background color for clarity */
+    margin-bottom: 2em; /* Add spacing below the section */
+    position: relative; /* Ensure proper stacking */
 }
 
-#variations{
-grid-area: v;
+/* Variations Section */
+#variations {
+    min-height: 700px; /* Use min-height instead of fixed height for flexibility */
+    margin-bottom: 2em; /* Add spacing below the section */
+    position: relative; /* Ensure proper stacking */
+    z-index: auto; /* Ensure it does not overlap other sections */
 }
 
+/* Full Character Set Section */
+#fullcharacterset {
+    min-height: 700px; /* Use min-height instead of fixed height for flexibility */
+    background: black; /* Background color for clarity */
+    margin-bottom: 2em; /* Add spacing below the section */
+    position: relative; /* Ensure proper stacking */
+}
+/* Define the grid container */
+body {
+    display: grid; /* Enable grid layout */
+    grid-template-areas:
+        "hero"
+        "h"
+        "v"
+        "a"; /* Define the order of the sections */
+    grid-template-rows: auto; /* Automatically adjust row heights */
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 2em; /* Add spacing between rows */
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    grid-area: hero; /* Assign the hero section to the "hero" grid area */
+}
+
+/* History Section */
+#history {
+    grid-area: h; /* Assign the history section to the "h" grid area */
+}
+
+/* Variations Section */
+#variations {
+    grid-area: v; /* Assign the variations section to the "v" grid area */
+}
+
+/* Full Character Set Section */
 #alphabet {
-grid-area: a;
+    grid-area: a; /* Assign the full character set section to the "a" grid area */
 }
 }
 /* CSS for the footer */
@@ -121,65 +187,6 @@ h5 {
     50% {
         font-variation-settings: "wght" 700;
     }
-}
-/* variable font that changes on hover */
-.variable-font{
-    font-weight:1 ;
-    height:100vh;
-    font-size: 10em;
-    display:grid;
-    place-content: center;
-    margin: 0;
-    text-align: center;
-    font-variation-settings: "wght" 40, "wdth" 0, "XXXX" 1;
-    transition: 
-        font-weight 500ms,
-        font-variation-settings 3s;
-}
-
-.variable-font:hover{
-    font-weight:500 ;
-    height:100vh;
-    font-size: 7em;
-    display:grid;
-    place-content: center;
-    margin: 0;
-    text-align: center;
-    font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
-}
-
-body {
-    background-image: url('./images/nickelgothic2.jpg'); /* Path to the image */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-}
-
-
-
-/* Ensure the content is under the navigation bar */
-.variations-page header {
-    position: fixed; /* Fix the nav bar at the top */
-    top: 0;
-    left: 0;
-    width: 100%; /* Full width of the screen */
-    z-index: 1000; /* Ensure it stays above other content */
-    background-color: rgba(255, 255, 255, 0.9); /* Optional: Add a background color */
-    padding: 1em;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
-}
-
-/* Add spacing below the fixed nav bar */
-.variations-page main {
-    margin-top: 120px; /* Adjust this value to match the height of your nav bar */
-}
-
-/* Style the #variations section */
-.variations-page #variations {
-    margin-top: 2em; /* Add spacing from the top */
-    margin-left: 2em; /* Align content to the left */
-    max-width: 400px; /* Limit the width of the content */
-    text-align: left; /* Align text to the left */
 }
 
 /* Ensure proper layout for larger screens */
@@ -260,40 +267,6 @@ body {
     font-family: 'Nickel Gothic Variable', sans-serif;
     font-size: 1.2em;
     line-height: 1.5;
-}
-
-
-
-.footer-button{
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    overflow: hidden;
-    background-color: rgb(214, 211, 211);
-    color:rgb(246, 31, 31);
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px;
-    font-size: 20px;
-    font-family: "Nickel Gothic", sans-serif; /* Use Nickel Gothic as the primary font */
-    font-stretch: condensed; /* Make the font condensed */
-    border-radius: 25px;
-    box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.5);
-
-}
-.footer-button::before{
-    content: '';
-    position: absolute;
-    background-color: rgba(255, 192, 192, 0.5);
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    transition: left 0.4s;
-
-}
-.footer-button:hover::before{
-    left: 0;
 }
 
 .footer-button:hover{

@@ -47,6 +47,18 @@
       padding: 0;
       list-style: none;
   }
+  li{ 
+    float: left;
+  }
+  a{ 
+    padding: 20px;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
   
   nav li {
       margin-bottom: 1em;
@@ -179,37 +191,6 @@
   main {
       flex: 1; /* Allow the main content to grow and take up available space */
   }
-  
-
-li{ 
-    float: left;
-  }
-  a{ 
-    padding: 20px;
-    width: 100px;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-#history{
-  height:700px;
-  background: pink;
-  display: inline-block; 
-  width: 100%;
-}
-#variations{
-  height:700px;
-  background: blue;
-  display: inline-block; 
-  width: 100%;
-}
-#fullcharacterset{
-  height:700px;
-  background: yellow;
-  display: inline-block; 
-  width: 100%;
-}
 
 
 
