@@ -1,9 +1,14 @@
 *, *::before, *::after {
     box-sizing: border-box;
   }
+  html{ 
+    scroll-behavior: smooth;
+  }
   
   body {
     margin: 0;
+    padding: 0;
+    font-family: 'Nickel Gothic Variable', sans-serif;
   }
   
   h1{
@@ -30,6 +35,7 @@
       top: 100%;
       left: 0;
       background: rgb(61, 61, 61);
+      overflow: hidden;
       width: 100%;
       transform: scale(1,0);
       transform-origin: top;
@@ -174,6 +180,39 @@
       flex: 1; /* Allow the main content to grow and take up available space */
   }
   
+
+li{ 
+    float: left;
+  }
+  a{ 
+    padding: 20px;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+#history{
+  height:700px;
+  background: pink;
+  display: inline-block; 
+  width: 100%;
+}
+#variations{
+  height:700px;
+  background: blue;
+  display: inline-block; 
+  width: 100%;
+}
+#fullcharacterset{
+  height:700px;
+  background: yellow;
+  display: inline-block; 
+  width: 100%;
+}
+
+
+
   /* Footer styling */
   footer {
       background-color: rgb(95, 92, 92); /* Optional: Add a background color */
