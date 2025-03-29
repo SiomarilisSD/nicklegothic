@@ -15,7 +15,7 @@
                 }
             
                 body {
-                    background-color: lightsteelblue;
+                    background-color: rgb(147, 147, 147);
                     font-family: 'Nickel Gothic Variable';
                     color: rgb(226, 226, 226); /* Change font color to white */
                 }
@@ -40,6 +40,7 @@ grid-template-areas:
     "h v"
     "a a";
 }
+}
 /* General Section Styling */
 section {
     display: block; /* Ensure sections behave as block-level elements */
@@ -63,27 +64,70 @@ section {
 
 /* History Section */
 #history {
+    padding: 2rem;
     min-height: 700px; /* Use min-height instead of fixed height for flexibility */
-    background: rgb(0, 0, 0); /* Background color for clarity */
+    background: url('./images/gothiccity.jpg') no-repeat center center; /* Set background to gothiccity.jpg */
+    background-size: cover; /* Ensure the image covers the entire background */
     margin-bottom: 2em; /* Add spacing below the section */
+    height: auto;
     position: relative; /* Ensure proper stacking */
+    display: grid; /* Use grid layout */
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-rows: auto auto; /* Automatically adjust row heights */
+    gap: 1.5rem; /* Add spacing between rows */
+    justify-items: start; /* Align content to the left horizontally */
+    align-items: center; /* Center content vertically */
 }
+
+/* History Section Header */
+#history h2 {
+    font-family: 'Nickel Gothic Variable', sans-serif; /* Use the Nickel Gothic font */
+    font-size: 2em; /* Set font size for headers */
+    margin-bottom: 0.5em; /* Add spacing below the header */
+    color: white; /* Set header color */
+    text-align: left; /* Align the header text to the left */
+    max-width: 600px; /* Constrain the width to align with the paragraph */
+    padding-left: 1rem; /* Add padding to the left for alignment */
+}
+
+/* History Section Paragraph */
+#history p {
+    font-family: 'Futura', sans-serif; /* Use the Futura font */
+    font-size: 1.2em; /* Set font size for paragraphs */
+    line-height: 1.5; /* Improve readability */
+    color: white; /* Set paragraph color */
+    text-align: justify; /* Justify the text */
+    margin: 0; /* Remove default margins */
+    max-width: 600px; /* Constrain the paragraph width */
+    padding-left: 1rem; /* Add padding to the left for alignment */
+} /* Closing brace for the previous block */
+
 
 /* Variations Section */
 #variations {
-    min-height: 700px; /* Use min-height instead of fixed height for flexibility */
-    margin-bottom: 2em; /* Add spacing below the section */
-    position: relative; /* Ensure proper stacking */
-    z-index: auto; /* Ensure it does not overlap other sections */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 2rem;
+    background-color: transparent;
+    margin: 2rem 0;
+    height: auto;
+    max-height: 500px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Full Character Set Section */
 #fullcharacterset {
+    padding: 2rem;
     min-height: 700px; /* Use min-height instead of fixed height for flexibility */
     background: black; /* Background color for clarity */
     margin-bottom: 2em; /* Add spacing below the section */
+   height: auto;
     position: relative; /* Ensure proper stacking */
 }
+
 /* Define the grid container */
 body {
     display: grid; /* Enable grid layout */
@@ -117,7 +161,6 @@ body {
 /* Full Character Set Section */
 #alphabet {
     grid-area: a; /* Assign the full character set section to the "a" grid area */
-}
 }
 /* CSS for the footer */
 footer{
@@ -174,7 +217,7 @@ h3{
 }/* Styling and animation for h5 elements */
 h5 {
     font-weight: 400; /* Corrected font-weight */
-    color: rgb(246, 31, 31);
+    color: rgb(129, 20, 20);
     margin: 15px;
     animation: weightChange 7s infinite;
 }
@@ -198,12 +241,10 @@ h5 {
 }
 /* Position the #variations section in the left-center of the screen */
 #variations {
-    position: absolute; /* Position the section relative to the viewport */
-    top: 50%; /* Center vertically */
-    left: 2%; /* Align to the left side (adjust as needed) */
-    transform: translateY(-50%); /* Adjust for vertical centering */
-    max-width: 400px; /* Limit the width of the content */
-    text-align: left; /* Align text to the left */
+    position: relative; /* Keep it in flow to avoid overlap */
+    margin: 2rem auto; /* Center the section with margin */
+    max-width: 80%; /* Adjust width for better layout */
+    text-align: center; /* Center-align text */
 }
 
 /* General styling for the variants */
