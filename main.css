@@ -162,7 +162,28 @@ body {
 #alphabet {
     grid-area: a; /* Assign the full character set section to the "a" grid area */
 }
+#aboutus {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 200px; /* Compress the height of the section */
+    padding: 1rem; /* Add padding for spacing */
+    background-color: #f9f9f9; /* Optional: Add a background color */
+    text-align: center; /* Center-align the text */
+    margin-top: 2rem; /* Add spacing above the section */
+    margin-bottom: 0; /* Ensure it aligns with the footer */
+}
 
+#aboutus h2 {
+    font-size: 1.5rem; /* Adjust font size for prominence */
+    margin: 0; /* Remove default margins */
+}
+
+#aboutus p {
+    font-size: 1rem; /* Adjust font size for readability */
+    margin: 0.5rem 0 0; /* Add a small margin above and below the paragraph */
+}
 
 /* variable font animation */
 /* variable font animation */
@@ -391,9 +412,24 @@ animation-delay: 2s;
 }
 
 /* CSS for the footer */
-footer{
-    background-color: gray;
+footer {
+    font-family: 'Futura', Arial, sans-serif; /* Use Futura with fallbacks */
+    font-size: 0.9rem; /* Slightly smaller font size for compactness */
+    line-height: 1.2; /* Reduce line spacing */
+    color: white; /* Set text color for contrast */
+    background-color: rgb(95, 92, 92); /* Dark gray background for clarity */
+    text-align: center; /* Center-align the text */
+    padding: 0.5rem; /* Reduce padding to make the footer thinner */
+    position: fixed; /* Fix the footer to the bottom of the viewport */
+    bottom: 0; /* Align it to the bottom */
+    left: 0; /* Ensure it starts from the left edge */
+    width: 100%; /* Ensure it spans the full width */
+    box-sizing: border-box; /* Include padding in width calculations */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center all items horizontally */
+    gap: 2rem; /* Add spacing between each <p> element */
 }
+
 .footer-button:hover{
     background-color: rgb(103, 64, 64);
 }
