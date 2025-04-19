@@ -30,6 +30,21 @@
       align-items: center;
       height: 100%; /* Ensure it takes up the full height of the header */
   }
+
+  @media screen and (max-width: 799px) {
+      nav ul {
+          display: flex;
+          flex-direction: column; /* Stack items in a column */
+          align-items: flex-start; /* Align items to the left */
+      }
+      nav li {
+          margin-left: 0; /* Remove left margin for stacked items */
+          margin-bottom: 1em; /* Add spacing between items */
+      }
+      nav a {
+          width: 100%; /* Ensure links take up full width */
+      }
+  }
   /* where to change the background color of the pop-up nav bar*/
  
   nav {
@@ -164,22 +179,6 @@
     nav li {
       margin-left: 3em;
       margin-bottom: 0;
-    }
-    nav a::before {
-      content: '';
-      display: block;
-      height: 3px;
-      background: black;
-      position: absolute;
-      bottom: -0.2em; /* Position the underline below the text */
-      left: 0;
-      right: 0;
-      transform: scale(0,1);
-      transition: transform ease-in-out 250ms;
-      
-    }
-    nav a:hover::before {
-      transform: scale(1,1);
     }
   }
   
